@@ -79,6 +79,7 @@ OrtSetDimensions
 OrtSetSessionLogId
 OrtSetSessionLogVerbosityLevel
 OrtSetSessionGraphOptimizationLevel
+OrtSetOptimizedModelFilePath
 OrtSetSessionThreadPoolSize
 OrtSetTensorElementType
 OrtTensorProtoToOrtValue
