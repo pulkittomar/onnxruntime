@@ -666,7 +666,7 @@ namespace Microsoft.ML.OnnxRuntime.Tests
             options.SetSessionGraphOptimizationLevel(1);
             var session = new InferenceSession(modelPath, options);
             Assert.NotNull(session);
-			Assert.True(File.Exists(modelOutputPath));
+            Assert.True(File.Exists(modelOutputPath));
         }
 
         [GpuFact]
