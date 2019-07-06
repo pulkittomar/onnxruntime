@@ -663,8 +663,10 @@ namespace Microsoft.ML.OnnxRuntime.Tests
 
             // Set the graph optimization level for this session.
             SessionOptions options = new SessionOptions();
-            options.SetOptimizedModelFilePath("squeezenet-Transform1.onnx");
+            options.SetOptimizedModelFilePath(Path.Combine(Directory.GetCurrentDirectory(), "squeezenet-Transform-Level1.onnx"));
+            options.SetSessionGraphOptimizationLevel(1);
             var session = new InferenceSession(modelPath, options);
+            Assert.NotNull(session);
         }
 
         [GpuFact]
